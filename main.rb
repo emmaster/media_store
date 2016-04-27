@@ -13,7 +13,7 @@ book.update(title: "Приключения Тома Сойера", author_name: 
 items_array << book
 
 
-album = Music_album.new(100,5)
+album = MusicAlbum.new(100,5)
 album.update(genre: "Jazz", artist_name: "Joe Cocker", album_name: "Best", year: 1934)
 items_array << album
 

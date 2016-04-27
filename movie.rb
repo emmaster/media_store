@@ -6,11 +6,11 @@ class Movie < Product
     @title = title
   end
 
-  def update(data_hash)
-    @title = data_hash[:title] if data_hash.has_key?(:title)
-    @price = data_hash[:price] if data_hash.has_key?(:price)
-    @year = data_hash[:year] if data_hash.has_key?(:year)
-    @director_name = data_hash[:director_name] if data_hash.has_key?(:director_name)
+  def update(params)
+    @title = params[:title]
+    @price = params[:price]
+    @year = params[:year]
+    @director_name = params[:director_name]
   end
 
   def info

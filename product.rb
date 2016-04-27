@@ -28,11 +28,11 @@ class Product
     info + " – #{@price} руб." +" [осталось: #{@storage}]"
   end
 
-  def self.showcase(product_array)
+  def self.showcase(products)
     puts
     puts "Что хотите купить?"
     puts
-    product_array.each_with_index do |item, index|
+    products.each_with_index do |item, index|
       puts "#{index}. "+item.show
     end
     puts "x. Покинуть магазин"
