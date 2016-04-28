@@ -8,7 +8,7 @@ class Movie < Product
 
   def update(params)
     @title = params[:title]
-    @price = params[:price]
+    @price = params[:price] if params[:price] != nil
     @year = params[:year]
     @director_name = params[:director_name]
   end

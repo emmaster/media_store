@@ -1,5 +1,4 @@
 class Product
-
   attr_accessor :price
 
   def initialize(price,storage)
@@ -36,5 +35,11 @@ class Product
       puts "#{index}. "+item.show
     end
     puts "x. Покинуть магазин"
+  end
+
+  def self.read_xml(file_path)
+    abort "К сожалению, файл не найден" unless File.exist?(file_path)
+    f = File.new(file_path)
+    return REXML::Document.new(f)
   end
 end

@@ -8,7 +8,7 @@ class Book < Product
 
   def update(params)
     @title = params[:title]
-    @price = params[:price]
+    @price = params[:price] if params[:price] != nil
     @author_name = params[:author_name]
   end
 

@@ -8,7 +8,7 @@ class MusicAlbum < Product
 
   def update(params)
     @album_name = params[:album_name]
-    @price = params[:price]
+    @price = params[:price] if params[:price] != nil
     @year = params[:year]
     @artist_name = params[:artist_name]
     @genre = params[:genre]

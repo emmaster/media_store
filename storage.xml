@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<products>
+
+  <product price="550" stock="5">
+    <book title="Приключения Тома Сойера" author_name="Марк Твен"/>
+  </product>
+
+  <product price="150" stock="4">
+    <music_album title="Best collection" artist_name="Joe Cocker" year="1943" genre="jazz"/>
+  </product>
+
+  <product price="10" stock="20">
+    <movie title="Ведьма из блер" director_name="Joe Cocker" year="1998"/>
+  </product>
+
+</products>
