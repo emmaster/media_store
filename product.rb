@@ -19,7 +19,7 @@ class Product
       return @price
     else
       puts "Покупка не удалась. Товара нет в наличии"
-      return nil
+      return 0
     end
   end
 

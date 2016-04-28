@@ -1,9 +1,12 @@
 class Movie < Product
-  attr_accessor :title, :year, :director_name
+  attr_accessor :title, :year, :director_name, :price, :storage
 
   def initialize(price, storage, title = nil)
     super(price, storage)
     @title = title
+    @price
+    @year
+    @director_name
   end
 
   def update(params)

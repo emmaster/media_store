@@ -1,17 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='UTF-8'?> 
 <products>
-
-  <product price="550" stock="5">
-    <book title="Приключения Тома Сойера" author_name="Марк Твен"/>
+  <product price='550' stock='5'>
+    <book title='Приключения Тома Сойера' author_name='Марк Твен'/>
   </product>
-
-  <product price="150" stock="4">
-    <music_album title="Best collection" artist_name="Joe Cocker" year="1943" genre="jazz"/>
+  <product price='150' stock='4'>
+    <musicalbum title='Best collection' artist_name='Joe Cocker' year='1943' genre='jazz'/>
   </product>
-
-  <product price="10" stock="20">
-    <movie title="Ведьма из блер" director_name="Joe Cocker" year="1998"/>
+  <product price='10' stock='20'>
+    <movie title='Ведьма из блер' director_name='Joe Cocker' year='1998'/>
   </product>
-
+  <product price='130' stock='3'>
+    <book title='Властелин Колец' author_name='Толкиен'/>
+  </product>
 </products>

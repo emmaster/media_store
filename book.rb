@@ -1,9 +1,10 @@
 class Book < Product
-  attr_accessor :title, :author_name, :price
+  attr_accessor :title, :author_name, :price, :storage
 
   def initialize(price, storage, title = nil)
     super(price, storage)
-    @title = title if title != nil
+    @title = title
+    @author_name = nil
   end
 
   def update(params)

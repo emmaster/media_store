@@ -1,9 +1,12 @@
 class MusicAlbum < Product
-  attr_accessor :title
+  attr_accessor :title, :price, :storage
 
   def initialize(price, storage, title = nil)
     super(price, storage)
-    @album_name = title if title != nil
+    @album_name = title
+    @year
+    @artist_name
+    @genre
   end
 
   def update(params)

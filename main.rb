@@ -7,7 +7,13 @@ require_relative ('music_album.rb')
 
 current_path = File.dirname(__FILE__)
 xml_file_path = current_path + '/storage.xml'
+
+begin
 xml_storage = Product.read_xml(xml_file_path)
+rescue REXML::ParseException => e
+  puts "Похоже, ваш xml битый :("
+  abort e.message
+end
 
 items_array = []
 
@@ -33,10 +39,10 @@ xml_storage.elements.each("products/product/book") do |book|
   items_array<<book_item
 end
 
-xml_storage.elements.each("products/product/music_album") do |album|
-  album_item = Movie.new(album.parent.attributes['price'].to_i,album.parent.attributes['stock'].to_i,album.attributes['title'])
+xml_storage.elements.each("products/product/musicalbum") do |album|
+  album_item = MusicAlbum.new(album.parent.attributes['price'].to_i,album.parent.attributes['stock'].to_i,album.attributes['title'])
   album_item.update({
-    :title => album.attributes['title'],
+    :album_name => album.attributes['title'],
     :director_name => album.attributes['artist_name'],
     :year => album.attributes['year'],
     :genre => album.attributes['genre']
